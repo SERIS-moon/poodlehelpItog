@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: poodlehelp-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: STAFF_PASSWORD
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: https://seris-moon.github.io
